@@ -1,0 +1,134 @@
+body {
+  background-color: rgb(222, 249, 251);
+}
+
+.btn {
+  background-color: #309dcd;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.625rem 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #237091;
+}
+
+.showcase {
+  background-image: linear-gradient(120deg, #309dcd, #ab4fd7);
+}
+
+.showcase .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.showcase .overlay h1 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.showcase .overlay p {
+  color: white;
+  margin-bottom: 1rem;
+  max-width: 400px;
+}
+
+.cuisine {
+  padding: 4rem 1.5rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.cuisine h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  gap: 2rem;
+  color: #111827;
+}
+
+.cuisine .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.cuisine .cards article h3 {
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.cuisine .cards article {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 2.5rem;
+}
+
+.cuisine .cards article img {
+  margin-bottom: 2rem;
+  border-radius: 2.5rem;
+}
+
+.cuisine .cards article p {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.cuisine .cards .btn {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 640px) {
+  .showcase .overlay h1 {
+    font-size: 3rem;
+  }
+  .cuisine .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .showcase .overlay h1 {
+    font-size: 4rem;
+  }
+  .showcase .overlay p {
+    font-size: 1rem;
+    max-width: 600px;
+  }
+  .cuisine {
+    padding: 6rem 1.5rem;
+  }
+  .cuisine h2 {
+    font-size: 3rem;
+  }
+
+  .cuisine .cards {
+    gap: 2.5rem;
+  }
+
+  .cuisine .cards h3 {
+    font-size: 1.5rem;
+  }
+  .cuisine .cards article p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .showcase .overlay h1 {
+    font-size: 6rem;
+  }
+  .showcase .overlay p {
+    font-size: 1rem;
+  }
+}

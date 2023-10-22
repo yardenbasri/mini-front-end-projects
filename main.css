@@ -24,3 +24,6 @@ input,
 button {
   font-family: inherit;
 }
+p {
+  line-height: 1.8;
+}
