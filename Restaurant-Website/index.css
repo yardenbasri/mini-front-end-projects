@@ -74,8 +74,8 @@ body {
 }
 
 .cuisine .cards article img {
-  margin-bottom: 2rem;
   border-radius: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .cuisine .cards article p {
@@ -88,6 +88,65 @@ body {
   margin-bottom: 2rem;
 }
 
+.booking {
+  background-image: linear-gradient(270deg, #309dcd, #ab4fd7);
+  max-width: 100%;
+}
+
+.booking h2 {
+  color: white;
+  font-size: 2.3rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+}
+
+.booking .cards {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.booking h3 {
+  color: white;
+  max-width: 1000px;
+  text-align: center;
+  margin: 2rem auto 0;
+  font-size: 1.6rem;
+}
+
+.footer {
+  padding: 4rem 1.5rem;
+  background-color: #111827;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.footer-inner h3 {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.footer-inner ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-inner ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-inner ul li a:hover {
+  opacity: 0.75;
+}
+
+.footer-inner ul li a:focus {
+  outline: 2px dotted white;
+}
+
 @media (min-width: 640px) {
   .showcase .overlay h1 {
     font-size: 3rem;
@@ -95,8 +154,16 @@ body {
   .cuisine .cards {
     grid-template-columns: 1fr 1fr;
   }
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
+@media (min-width: 750px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 @media (min-width: 992px) {
   .showcase .overlay h1 {
     font-size: 4rem;
@@ -122,6 +189,13 @@ body {
   .cuisine .cards article p {
     font-size: 1rem;
   }
+
+  .booking h2 {
+    font-size: 3rem;
+  }
+  .footer-inner {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -130,5 +204,11 @@ body {
   }
   .showcase .overlay p {
     font-size: 1rem;
+  }
+  .booking h2 {
+    font-size: 4rem;
+  }
+  .footer-inner {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
