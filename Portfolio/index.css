@@ -1,0 +1,218 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.header .logo a {
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.bg-gray {
+  width: 20rem;
+  height: 20rem;
+  background-color: white;
+  position: absolute;
+  filter: blur(250px);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: #e7d215;
+  color: white;
+  font-weight: bold;
+  padding: 0.625rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.9rem;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 0.3rem;
+}
+
+.hero {
+  position: relative;
+  color: white;
+  padding: 6rem 1.5rem;
+}
+
+.hero article h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.hero article h1 span {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #e7d215;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.hero article p {
+  margin-bottom: 2rem;
+  opacity: 0.75;
+  font-size: 0.9rem;
+}
+
+.hero article a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero article a img {
+  width: 4rem;
+  margin-left: 2rem;
+}
+
+.hero article:last-child {
+  display: none;
+}
+
+.single-card {
+  color: white;
+}
+
+.single-card article {
+  /*margin-right: 2rem;*/
+  padding: 0 1.5rem 2rem;
+}
+.single-card h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+.single-card p {
+  opacity: 0.75;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+.single-card ul {
+  display: flex;
+  align-items: center;
+}
+
+.single-card ul li:last-child {
+  margin-left: 2rem;
+}
+
+.cta {
+  background-color: #111;
+  padding: 4rem 1.5rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.cta .btn {
+  transform: scale(1.25);
+  padding: 0.625rem 3rem;
+  font-size: 1.25rem;
+}
+footer {
+  padding: 4rem 0;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .cards {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .single-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .single-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .single-card article {
+    flex: 1;
+    padding: 0;
+  }
+  .single-card .text-container {
+    margin-left: 2rem; /* Adjust the margin as needed */
+  }
+  /*.single-card article:first-child {
+    /*margin-right: -10px; /* Adjust this value as needed */
+  /*margin-left: -60px; /* Adjust this value as needed */
+  /*} /*
+  .single-card:nth-child(even) article:first-child {
+    margin-right: -10px; 
+  }*/
+  /*.single-card:nth-child(odd) article:first-child {
+    margin-left: -10px; 
+  }*/
+  .cta {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cta h2 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .hero article p {
+    font-size: 1rem;
+  }
+
+  .hero article h1 {
+    font-size: 4rem;
+  }
+
+  .hero article:last-child {
+    display: block;
+  }
+  .hero {
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+  }
+}
